@@ -1,0 +1,19 @@
+{
+  "name": "chapitre05",
+  "version": "1.0.0",
+  "description": "Demonstration pour les cours du chapitre 05",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alain-clg/chapitre5.git"
+  },
+  "author": "Alain Pilon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alain-clg/chapitre5/issues"
+  },
+  "homepage": "https://github.com/alain-clg/chapitre5#readme"
+}
