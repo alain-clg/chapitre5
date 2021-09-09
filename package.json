@@ -4,7 +4,8 @@
   "description": "Demonstration pour les cours du chapitre 05",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/alain-clg/chapitre5#readme",
   "dependencies": {
+    "nodemon": "^2.0.12",
     "uuid": "^8.3.2"
   }
 }
