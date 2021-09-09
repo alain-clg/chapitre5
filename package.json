@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alain-clg/chapitre5/issues"
   },
-  "homepage": "https://github.com/alain-clg/chapitre5#readme"
+  "homepage": "https://github.com/alain-clg/chapitre5#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
 }

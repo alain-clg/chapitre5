@@ -26,18 +26,30 @@ const path = require('path');
 // );
 let nomFichier = path.join(__dirname, 'data', 'data.txt');
 let nomDossier = path.join(__dirname, 'data');
-fs.access( nomDossier, fs.constants.F_OK, err => {
-    if (err)
-        console.log(`Le dossier "${nomDossier}" n'existe pas`);
-    else
-        console.log(`Le dossier "${nomDossier}" existe `);
-});
-fs.access( nomFichier, fs.constants.F_OK, err => {
-    if (err)
-        console.log(`Le dossier "${nomFichier}" n'existe pas`);
-    else
-        lectureFichier(nomFichier);
-});
+// fs.access( nomDossier, fs.constants.F_OK, err => {
+//     if (err)
+//         console.log(`Le dossier "${nomDossier}" n'existe pas`);
+//     else
+//         console.log(`Le dossier "${nomDossier}" existe `);
+// });
+// fs.access( nomFichier, fs.constants.F_OK, err => {
+//     if (err)
+//         console.log(`Le dossier "${nomFichier}" n'existe pas`);
+//     else
+//         lectureFichier(nomFichier);
+// });
+// lectureFichier(nomFichier);
+// autre facon de verifier la presence d'un fichier:
+fs.stat(
+    nomFichier,
+    (err, stats) => {
+        if (err) throw err;
+        console.log('est-ce un dossier?', stats.isDirectory());
+        console.log('un fichier?', stats.isFile());
+        console.log('stats', stats);
+    }
+)
+
 console.log('Fin du programme');
 
 function lectureFichier(nomFichier) {
